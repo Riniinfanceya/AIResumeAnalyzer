@@ -1,0 +1,40 @@
+<div class="container">
+
+  <h2>Upload Document</h2>
+
+  <label>File Name</label>
+
+  <input
+    type="text"
+    [(ngModel)]="fileName">
+
+  <br><br>
+
+  <label>Content</label>
+
+  <textarea
+    rows="8"
+    [(ngModel)]="content">
+  </textarea>
+
+  <br><br>
+
+  <label>Summary</label>
+
+  <input
+    type="text"
+    [(ngModel)]="summary">
+
+  <br><br>
+
+  <button (click)="save()">
+    Save Document
+  </button>
+
+  <br><br>
+
+  <p>
+    {{message}}
+  </p>
+
+</div>

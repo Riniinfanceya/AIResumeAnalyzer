@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h2>AI Resume Assistant</h2>
+
+  <textarea
+    rows="5"
+    [(ngModel)]="question"
+    placeholder="Ask something..."
+    class="input">
+  </textarea>
+
+  <br>
+
+  <button (click)="send()">
+    Ask AI
+  </button>
+
+  <hr>
+
+  <p>
+    <strong>Mode:</strong>
+    {{mode}}
+  </p>
+
+  <p>
+    <strong>Answer:</strong>
+  </p>
+
+  <div class="answer">
+    {{answer}}
+  </div>
+
+</div>
